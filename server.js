@@ -8,7 +8,7 @@ app.get('/greeting/:name', (req, res) => {
 });
 
 app.get('/tip/:total/:tipPercentage', (req, res) => {
-    res.send(`Tip base off of total: $` + req.params.total + ` ` + `tip%:`+ `$` + req.params.tipPercentage * req.params.total / 100);
+    res.send(`Tip base off of total: $` + req.params.total + ` ` + `tip%:`+ req.params.tipPercentage + '% ' + `tip:` +`$` + req.params.tipPercentage * req.params.total / 100);
 });
 
 app.get('/magic/:question', (req, res) => {
