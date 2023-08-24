@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get('/greeting/:name', (req, res) => {
-    res.send("Hello, Stranger");
+    res.send(`wow! hello there,` + req.params.name);
 });
 
 
